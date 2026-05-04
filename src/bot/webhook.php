@@ -17,7 +17,7 @@ $mensaje = trim($datos['body']); // el contenido
 // verificar el estado
 $estadoActual = GestorEstados::obtenerEstado($telefono);
 
-// los estados
+// los estados 
 switch ($estadoActual['paso']) {
     case 'INICIO':
         enviarMensaje($telefono, Mensajes::BIENVENIDA);
